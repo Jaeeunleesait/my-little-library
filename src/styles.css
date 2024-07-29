@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.site-title {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.nav {
+  background-color: #ad88c6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+.nav li.active {
+  background-color: #e1afd1;
+}
+.nav li:hover {
+  background-color: #7469b6;
+}
+.bg {
+  background-image: url(./assets/images/greenBook.jpg);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.bookSearch {
+  color: black;
+  list-style-type: none;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  margin: 10rem;
+}
+.searchBar {
+  height: 3rem;
+  width: 30rem;
+}
+
+.result {
+  margin: 10px;
+  text-align: left;
+}
+
+.results {
+  border: 5px solid rgb(0, 0, 0);
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchBookImg {
+  max-width: 100px;
+  max-height: 300px;
+}
+
+.bookDetail {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Yellowtail", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  color: #ad88c6;
+}
+
+.signInButton {
+  background-color: #e1afd1;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border-radius: 1rem;
+  width: 150px;
+  height: 50px;
+  margin-top: 5rem;
+}
+
+.signInPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.addBookButton {
+  background-color: #ad88c6;
+  color: white;
+  border-radius: 1rem;
+  width: 200px;
+  height: 50px;
+}
