@@ -20,13 +20,14 @@ export default function App() {
       console.log(error);
     }
   }
-  /*{async function handleLogOut() {
+
+  async function handleLogOut() {
     try {
       await firebaseSignOut();
     } catch (error) {
       console.log(error);
     }
-  }}*/
+  }
 
   return (
     <>
@@ -35,7 +36,7 @@ export default function App() {
           <Navbar />
           <div className="container">
             <Routes>
-              <Route path="/Home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/BookSearch" element={<BookSearch />} />
               <Route path="/IveRead" element={<IveRead />} />
               <Route path="/ImReading" element={<ImReading />} />

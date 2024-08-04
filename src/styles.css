@@ -4,6 +4,18 @@
 
 body {
   margin: 0;
+  background-image: url(./assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 10rem;
+  color: aliceblue;
+  font-size: 40px;
+  font-family: "Nunito";
 }
 
 .site-title {
@@ -51,14 +63,7 @@ body {
 .nav li:hover {
   background-color: #7469b6;
 }
-.bg {
-  background-image: url(./assets/images/greenBook.jpg);
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-}
+
 .bookSearch {
   color: black;
   list-style-type: none;
@@ -71,28 +76,102 @@ body {
   height: 3rem;
   width: 30rem;
 }
+::placeholder {
+  color: gray;
+}
 
-.result {
+.allResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Read List */
+.readListContainer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 5px solid #e1afd1;
+  border-radius: 10px;
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  cursor: pointer;
+}
+
+/* Search Results */
+.searchResultsContainer {
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 5px solid #e1afd1;
+  border-radius: 10px;
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.searchResult {
   margin: 10px;
   text-align: left;
 }
 
-.results {
-  border: 5px solid rgb(0, 0, 0);
-  width: 30rem;
-  display: flex;
-  flex-direction: row;
-}
-
 .searchBookImg {
-  max-width: 100px;
-  max-height: 300px;
+  width: 100px;
+  max-height: 200px;
+  margin-left: 3rem;
+  display: block;
 }
 
-.bookDetail {
+.searchResultbookDetail {
   display: flex;
   flex-direction: column;
   margin: auto;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: "bold";
+}
+
+/* Chosen Book */
+.chosenBookContainer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #e1afd1, #ffe6ef);
+}
+
+.chosenBookImg {
+  max-width: 200px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.chosenBookDetailContainer {
+  text-align: center;
+}
+.chosenBookDetail {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px;
+}
+.chosenBookButtonContainer {
+  margin-top: 2rem;
+}
+
+.chosenBookButton {
+  background-color: #ad88c6;
+  color: white;
+  font-family: "Nunito";
+  font-size: large;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  padding: 10px;
 }
 
 .heading {
@@ -112,6 +191,7 @@ body {
   width: 150px;
   height: 50px;
   margin-top: 5rem;
+  font-family: "Nunito";
 }
 
 .signInPageContainer {
@@ -122,9 +202,67 @@ body {
 }
 
 .addBookButton {
+  margin-top: 5rem;
   background-color: #ad88c6;
   color: white;
-  border-radius: 1rem;
+  width: 150px;
+  height: 40px;
+  font-family: "Nunito";
+}
+
+.categoryButton {
+  background-color: #ad88c6;
+  color: white;
   width: 200px;
-  height: 50px;
+  height: 40px;
+  margin-left: 5rem;
+  font-family: "Nunito";
+}
+
+.saveButton {
+  font-weight: bold;
+  background-color: #ad88c6;
+  color: white;
+  width: 80px;
+  height: 40px;
+  margin-top: 1rem;
+  font-family: "Nunito";
+}
+
+/* Date Selection */
+.dateSelectionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dateLabel {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.datePartLabel {
+  margin-right: 10px;
+}
+
+.datePartSelect {
+  margin-right: 10px;
+  background-color: Pink;
+}
+
+.backButton {
+  font-weight: bold;
+  background-color: #ffe6ef;
+  color: #7469b6;
+  width: 80px;
+  height: 40px;
+  margin-left: 3rem;
+  font-family: "Nunito";
+}
+
+.page {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: large;
 }

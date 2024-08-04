@@ -6,7 +6,7 @@ export default function Navbar() {
         My Little Library
       </Link>
       <ul>
-        <CustomLink to="/Home">Home</CustomLink>
+        <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/BookSearch">Book search</CustomLink>
         <CustomLink to="/IveRead">I've read</CustomLink>
         <CustomLink to="/ImReading">I'm reading</CustomLink>

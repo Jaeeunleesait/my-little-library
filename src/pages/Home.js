@@ -1,10 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
+  const navigate = useNavigate();
+  function handleStartClicked() {
+    navigate("/BookSearch");
+  }
+
   return (
     <view>
-      <div className="bg"></div>
-      <div>
-        <button className="addBookButton">Star your book journey!</button>
-      </div>
+      <h1>Enjoy your reading journey with My Little Library</h1>
+      <button onClick={handleStartClicked} className="addBookButton">
+        Add your book
+      </button>
     </view>
   );
 }
